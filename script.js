@@ -27,7 +27,7 @@ const updateImageCard = (imgDataArray) => {
 const generateAiImages = async (userPrompt, userImgQuantity) => {
   try {
     // Send a request to the OpenAI API to generate images based on user inputs
-    const response = await fetch("https://api.openai.com/v1/images/generations", {
+    const response = await fetch("https://api.dynapictures.com/designs/e506acbddf", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
