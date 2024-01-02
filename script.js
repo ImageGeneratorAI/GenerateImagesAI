@@ -2,7 +2,7 @@ const generateForm = document.querySelector(".generate-form");
 const generateBtn = generateForm.querySelector(".generate-btn");
 const imageGallery = document.querySelector(".image-gallery");
 
-const Activator = "76d34d2c57223fd8bbd2602506cff4258687968814cae8bf"; // Activation Key brought from your bedroom
+const Activator = "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"; // Activation Key brought from your bedroom
 let isImageGenerating = false;
 
 const updateImageCard = (imgDataArray) => {
@@ -27,7 +27,7 @@ const updateImageCard = (imgDataArray) => {
 const generateAiImages = async (userPrompt, userImgQuantity) => {
   try {
     // Send a request to the OpenAI API to generate images based on user inputs
-    const response = await fetch("https://api.dynapictures.com/designs/e506acbddf", {
+    const response = await fetch("https://api.openai.com/v1/images/generations", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
