@@ -2,7 +2,7 @@ const generateForm = document.querySelector(".generate-form");
 const generateBtn = generateForm.querySelector(".generate-btn");
 const imageGallery = document.querySelector(".image-gallery");
 
-const Activator = "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"; // Activation Key brought from your bedroom
+const Activator = "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"; // Activation Key brought from your bedroom
 let isImageGenerating = false;
 
 const updateImageCard = (imgDataArray) => {
